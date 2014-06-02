@@ -23,6 +23,7 @@ simply by using the Find and Replace function in your editor. Simply replace `al
 # To do
 
 - Organize file structure
+- Older browser support (I'm looking at you, Internet Explorer)
 - Add support for an icon (either icon font or image)
 - Add support for customized effects
 - Theme support
