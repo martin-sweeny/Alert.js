@@ -1,0 +1,177 @@
+html, body {
+    margin: 0; padding : 0;
+    background: url(http://subtlepatterns.com/patterns/skulls.png);
+}
+
+.messages-container {
+    position    : fixed;
+    top         : 0;
+    right       : 0;
+    padding-top : 15px;
+}
+
+.er-popup-message {
+
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+    background: gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+    background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+
+    // border-radius : 3px;
+    min-width  : 100px;
+    min-height : 40px;
+    padding    : 6px;
+    margin     : 0 15px 15px 0;
+    box-sizing : border-box;
+
+    position: relative;
+
+    box-shadow     : 0 2px 4px rgba(0,0,0,0.25);
+    color          : #222;
+    text-shadow    : 0 1px 1px white;
+
+    cursor : default;
+
+    -webkit-transition : opacity 250ms, margin 250ms;
+    -moz-transition    : opacity 250ms, margin 250ms;
+    -ms-transition     : opacity 250ms, margin 250ms;
+    -o-transition      : opacity 250ms, margin 250ms;
+    transition         : opacity 250ms, margin 250ms;
+
+    -webkit-animation : slideIn 500ms, slideOut 500ms 3.5s forwards;
+    -moz-animation    : slideIn 500ms, slideOut 500ms 3.5s forwards;
+    -ms-animation     : slideIn 500ms, slideOut 500ms 3.5s forwards;
+    -o-animation      : slideIn 500ms, slideOut 500ms 3.5s forwards;
+    animation         : slideIn 500ms, slideOut 500ms 3.5s forwards;
+
+    font : {
+        family : "Roboto";
+        size   : 16px;
+    }
+
+    .icon {
+        float     : left;
+        padding   : 5px;
+        font-size : 28px;
+    }
+
+    .header {
+        display     : block;
+        font-weight : bold;
+    }
+}
+.er-popup-message:hover {
+    opacity: .1;
+}
+
+.er-popup-message:after {
+    content : "";
+
+    display  : block;
+    position : absolute;
+    bottom   : 0;
+    left     : 0;
+    width    : 0;
+    height   : 2px;
+
+    background : rgba(110,150,220,1);
+    box-shadow : 0 1px 1px rgba(0,0,0,0.25);
+
+    -webkit-animation : 3.5s linear 0s normal forwards 1 progressBar;
+    -moz-animation    : 3.5s linear 0s normal forwards 1 progressBar;
+    -ms-animation     : 3.5s linear 0s normal forwards 1 progressBar;
+    -o-animation      : 3.5s linear 0s normal forwards 1 progressBar;
+    animation         : 3.5s linear 0s normal forwards 1 progressBar;
+}
+
+@-webkit-keyframes slideIn {
+    from {
+        -webkit-transform : translateY(-100%);
+        opacity : 0;
+    }
+}
+@-moz-keyframes slideIn {
+    from {
+        -moz-transform : translateY(-100%);
+        opacity : 0;
+    }
+}
+@-ms-keyframes slideIn {
+    from {
+        -ms-transform : translateY(-100%);
+        opacity : 0;
+    }
+}
+@-o-keyframes slideIn {
+    from {
+        -o-transform : translateY(-100%);
+        opacity : 0;
+    }
+}
+@keyframes slideIn {
+    from {
+        transform : translateY(-100%);
+        opacity : 0;
+    }
+}
+
+@-webkit-keyframes slideOut {
+    to {
+        bottom  : 100%;
+        opacity : 0;
+    }
+}
+@-moz-keyframes slideOut {
+    to {
+        bottom  : 100%;
+        opacity : 0;
+    }
+}
+@-ms-keyframes slideOut {
+    to {
+        bottom  : 100%;
+        opacity : 0;
+    }
+}
+@-o-keyframes slideOut {
+    to {
+        bottom  : 100%;
+        opacity : 0;
+    }
+}
+@keyframes slideOut {
+    to {
+        bottom  : 100%;
+        opacity : 0;
+    }
+}
+
+@-webkit-keyframes progressBar {
+    to {
+        width : 100%;
+    }
+}
+@-moz-keyframes progressBar {
+    to {
+        width : 100%;
+    }
+}
+@-ms-keyframes progressBar {
+    to {
+        width : 100%;
+    }
+}
+@-o-keyframes progressBar {
+    to {
+        width : 100%;
+    }
+}
+@keyframes progressBar {
+    to {
+        width : 100%;
+    }
+}

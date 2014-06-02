@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset="utf-8">
+
+        <script src="Alert.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="messages-container">
+        </div>
+
+        <button>Click me</button>
+
+        <script>
+        document.querySelectorAll('button')[0].addEventListener('click', function () {
+            new AlertMessage({
+                'title'   : 'Hello world',
+                'message' : 'Welcome to Alert.js!',
+                'icon'    : '<i class="icon-user-info"></i>'
+            });
+        }, true);
+        </script>
+    </body>
+</html>
