@@ -1,7 +1,7 @@
 # Alert.js
-### A simple way to show nice alerts.
+###### A simple way to show nice alerts.
 
-
+###### [Example here](http://jsfiddle.net/d7dvh/1/embedded/result/)
 
 # Usage
 
