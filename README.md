@@ -27,3 +27,4 @@ simply by using the Find and Replace function in your editor. Simply replace `al
 - Add support for an icon (either icon font or image)
 - Add support for customized effects
 - Theme support
+- Angular service
