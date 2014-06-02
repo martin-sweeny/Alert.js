@@ -19,3 +19,10 @@ Alert({
 ```
 That being said, it is very easy to convert __all__ of your `alert()` calls into Alert.js instances
 simply by using the Find and Replace function in your editor. Simply replace `alert(` for `Alert(`!
+
+# To do
+
+- Organize file structure
+- Add support for an icon (either icon font or image)
+- Add support for customized effects
+- Theme support
