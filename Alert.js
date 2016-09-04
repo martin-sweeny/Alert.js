@@ -26,9 +26,8 @@ function Alert (options) {
     } else {
 
         for ( var prop in defaults ) {
-            if ( defaults.hasOwnProperty(prop) ) {
-                config[prop] = options[prop] || defaults[prop];
-            }
+            if ( ! defaults.hasOwnProperty(prop) ) continue;
+            config[prop] = options[prop] || defaults[prop];
         }
 
     }
